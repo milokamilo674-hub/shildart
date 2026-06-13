@@ -185,7 +185,7 @@ a { color: inherit; text-decoration: none; }
   display: block;
   width: 22px;
   height: 1px;
-  background: var(--ink);
+  background: var(--cream);
   transition: all var(--transition);
 }
 .nav__mobile {
