@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShildArt — Cuadros Artesanales</title>
+  <meta name="description" content="Piezas únicas hechas a mano. Cada objeto cuenta una historia." />
+  <meta property="og:title" content="ShildArt — Productos Artesanales" />
+  <meta property="og:description" content="Piezas únicas hechas a mano." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="logo.png" class="nav__logo">
+      <img src="images/logo.png" alt="Shildart Cuadros" class="nav__logo-img" />
+        ShildArt
+      </a>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#coleccion">Colección</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#precios">Precios</a>
+      </nav>
+      <button class="nav__menu-btn" aria-label="Abrir menú" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#coleccion" class="mobile-link">Colección</a>
+      <a href="#proceso" class="mobile-link">Proceso</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+      <a href="#precios">Precios</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Hecho a mano con amor</p>
+          <h1 class="hero__headline">
+            Objetos que<br />
+            <em>permanecen.</em>
+          </h1>
+          <p class="hero__sub">¡Hola! Soy Shildart. Hago cuadros personalizados a mano, únicos y llenos de tu esencia 🎨🍓.
+              Cada diseño es especial, igual que vos ✨
+              📩 Pedidos por WhatsApp, con 4–5 días de anticipación.
+              <br>Los precios varían según el diseño y el tamaño del lienzo.🖼️
+              <br>Seña para confirmar tu cuadro.💳
+          </p>
+          <div class="hero__actions">
+            <a href="#coleccion" class="btn btn--primary">Ver colección</a>
+            <a href="#proceso" class="btn btn--ghost">Nuestro proceso</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__img-wrap">
+            <div class="hero__placeholder"></div>
+            <div class="hero__badge">Nueva colección 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats container">
+      <div class="stat">
+        <strong>+340</strong>
+        <span>Piezas vendidas</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>8 años</strong>
+        <span>de taller propio</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>materiales naturales</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>Edición</strong>
+        <span>limitada siempre</span>
+      </div>
+    </div>
+
+<!-- COLECCIÓN -->
+<section class="collection" id="coleccion">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Estilos Shildart</p>
+      <h2>Nuestra colección</h2>
+      <p class="section-sub">Cada lienzo es único y hecho a mano. Elegí el estilo que más te representa.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-bar" role="tablist" aria-label="Filtrar por estilo">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      <button class="filter-btn" data-filter="minimalista" role="tab" aria-selected="false">Minimalista</button>
+      <button class="filter-btn" data-filter="retratos" role="tab" aria-selected="false">Retratos</button>
+      <button class="filter-btn" data-filter="pop" role="tab" aria-selected="false">Pop & Cultura</button>
+      <button class="filter-btn" data-filter="paisajes" role="tab" aria-selected="false">Paisajes</button>
+    </div>
+
+    <br>
+    <br>
+    <div class="products-grid">
+
+      <article class="product-card" data-category="minimalista">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--1"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Minimalista</p>
+          <h3 class="product-card__name">Esencia</h3>
+          <p class="product-card__price">Siluetas limpias sin rasgos faciales · Estilo más simple</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="minimalista">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--2"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Minimalista</p>
+          <h3 class="product-card__name">Mirada</h3>
+          <p class="product-card__price">Siluetas con detalles sutiles · Estilo simple</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="minimalista">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--3"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Minimalista</p>
+          <h3 class="product-card__name">Silueta Nocturna</h3>
+          <p class="product-card__price">Blanco sobre negro · Elegante y único</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="retratos">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--4"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag product-card__tag--popular">⭐ El más elegido</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Retratos</p>
+          <h3 class="product-card__name">Cartoon Line</h3>
+          <p class="product-card__price">Caricaturas personalizadas · Ideal para regalar</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="retratos">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--5"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Retratos</p>
+          <h3 class="product-card__name">Retratos de Animalitos</h3>
+          <p class="product-card__price">Mascotas y animales estilo cartoon</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="pop">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--6"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Pop & Cultura</p>
+          <h3 class="product-card__name">Anime Art</h3>
+          <p class="product-card__price">Tu personaje favorito en lienzo</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="pop">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--7"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Pop & Cultura</p>
+          <h3 class="product-card__name">Simpsons</h3>
+          <p class="product-card__price">Caricaturas estilo Simpsons a pedido</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="pop">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--8"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Pop & Cultura</p>
+          <h3 class="product-card__name">Personajes & Cartoon</h3>
+          <p class="product-card__price">Animados, artistas y estilos cartoon</p>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="paisajes">
+        <div class="product-card__img-wrap">
+          <div class="product-card__img product-card__img--9"></div>
+          <div class="product-card__overlay">
+            <a href="#contacto" class="btn btn--white">Consultar</a>
+          </div>
+          <span class="product-card__tag">Disponible</span>
+        </div>
+        <div class="product-card__info">
+          <p class="product-card__category">Paisajes</p>
+          <h3 class="product-card__name">Paisajes Artísticos</h3>
+          <p class="product-card__price">Naturaleza y escenarios · Ideal para decorar</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="prices" id="precios">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Detalles para los encargos</p>
+      <h2>Lienzos personalizados</h2>
+      <p class="section-sub">+ fotito de referencia impresa incluida en cada encargo</p>
+    </div>
+
+    <div class="prices__table-wrap">
+      <table class="prices__table">
+        <thead>
+          <tr>
+            <th>Tamaño</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15 × 15 cm</td>
+            <td>Gs. 70.000</td>
+          </tr>
+          <tr>
+            <td>16 × 22 cm</td>
+            <td>Gs. 90.000</td>
+          </tr>
+          <tr>
+            <td>30 × 30 cm</td>
+            <td>Gs. 130.000</td>
+          </tr>
+          <tr>
+            <td>30 × 40 cm</td>
+            <td>Gs. 190.000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="prices__note">
+        ⚠️ El precio puede <strong>variar</strong> dependiendo del diseño, los detalles y el nivel de complejidad.
+        Desde diseños más simples hasta más elaborados.
+        El precio puede <strong>subir o bajar</strong> según el trabajo requerido.
+      </p>
+
+      <div class="prices__cta">
+        <a href="https://wa.me/595982380623?text=Hola!%20Quiero%20consultar%20el%20precio%20de%20un%20lienzo%20personalizado." 
+           target="_blank" rel="noopener" class="btn btn--primary">
+          💬 Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- PROCESO -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Del material a tus manos</h2>
+        </div>
+        <div class="process__steps">
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1"/>
+                <path d="M10 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="currentColor" stroke-width="1"/>
+                <circle cx="16" cy="16" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Selección</h3>
+            <p>Buscamos los materiales en origen. Sin intermediarios. Solo lo que tiene alma propia.</p>
+          </div>
+          <div class="process__connector" aria-hidden="true"></div>
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8 24L16 8l8 16" stroke="currentColor" stroke-width="1"/>
+                <path d="M10.5 19h11" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Creación</h3>
+            <p>Cada pieza se trabaja a mano en el taller. Sin relojes, sin metas de producción.</p>
+          </div>
+          <div class="process__connector" aria-hidden="true"></div>
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="8" y="10" width="16" height="13" rx="1" stroke="currentColor" stroke-width="1"/>
+                <path d="M12 10V8a4 4 0 018 0v2" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Entrega</h3>
+            <p>Empacamos con papel reciclado. Llega lista para regalar o para quedarte con ella.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Lo que dicen</p>
+          <h2>Clientes</h2>
+        </div>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p>"El cuenco llegó mejor de lo que esperaba. Se nota que hay amor en cada curva."</p>
+            <cite>— *Test</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Compré la bandeja de roble y es la pieza más bella que tengo en casa."</p>
+            <cite>— *Test</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"El packaging es una obra de arte en sí mismo. Volveré a comprar sin duda."</p>
+            <cite>— *Test</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__text">
+          <p class="eyebrow">Hablemos</p>
+          <h2>¿Algo te llamó la atención?</h2>
+          <p>Escribinos. Podemos hacer envíos hasta la puerta de tu casa y también aceptamos encargos personalizados.</p>
+          <div class="contact__details">
+            <a href="https://wa.me/595982380623" target="_blank" rel="noopener" class="contact__link">Escribinos por WhatsApp</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="contact__link">@ShildArt</a>
+          </div>
+        </div>
+        <div class="contact__form">
+          <p style="color: var(--ink-muted); font-size: 0.9375rem; margin-bottom: 1.5rem;">
+            Contanos qué pieza te interesa y te respondemos a la brevedad.
+          </p>
+          <a 
+            href="https://wa.me/595982380623?text=Hola!%20vi%20tu%20tienda%20y%20me%20interesa%20consultar%20por%20un%20producto." 
+            target="_blank" 
+            rel="noopener" 
+            class="btn btn--primary btn--full">💬 Abrir WhatsApp
+        </a>
+      </div>  
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img src="images/logo.png" alt="Shildart Cuadros" class="footer__logo-img" />
+        ShildArt
+      </div>
+      <p class="footer__copy">© 2026 ShildArt. Hecho a mano en Paraguay.</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/shildart_">Instagram</a>
+        <a href="https://wa.me/595982380623?text=Hola!%20vi%20tu%20tienda%20y%20me%20interesa%20consultar%20por%20un%20producto.">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
